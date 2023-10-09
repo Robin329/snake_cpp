@@ -137,9 +137,9 @@ void GameCtrl::moveSnake() {
             map->createRandFood();
         }
         mutexMove.unlock();
-    } catch (const std::exception) {
-        mutexMove.unlock();
-        throw;
+    } catch (const std::exception &e) {
+	    mutexMove.unlock();
+	    throw;
     }
 }
 
@@ -290,7 +290,7 @@ void GameCtrl::drawTestPoint(const Point &p, const ConsoleColor &consoleColor) c
         pointStr = util::toString(p.getDist());
         if (dist / 10 == 0) {
             pointStr.insert(0, " ");
-        } 
+        }
     }
     Console::writeWithColor(pointStr, consoleColor);
 }
@@ -371,7 +371,7 @@ void GameCtrl::testSearch() {
         map->getPoint(Pos(4, i)).setType(Point::Type::WALL);   // horizontal #1
         map->getPoint(Pos(15, i)).setType(Point::Type::WALL);  // horizontal #2
     }
-   
+
     Pos from(6, 7), to(14, 13);
     snake.testMinPath(from, to, path);
     //snake.testMaxPath(from, to, path);

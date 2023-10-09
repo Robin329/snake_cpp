@@ -4,7 +4,7 @@ project(Snake CXX)
 
 set(PROJ_EXEC_NAME snake)
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
-
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 # Set default build type
 if (NOT CMAKE_BUILD_TYPE)
     set(CMAKE_BUILD_TYPE Release)

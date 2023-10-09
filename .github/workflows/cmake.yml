@@ -35,7 +35,7 @@ jobs:
     - name: Build
       # Build your program with the given configuration
       run: |
-        mkdir build && cd build
+        cd build
         eval "ARCH_FLAG=\${ARCH_FLAG_${ARCH}}"
         cmake -DCMAKE_BUILD_TYPE=${BUILD_TYPE} -DCMAKE_VERBOSE_MAKEFILE=ON ..
         make -j
