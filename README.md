@@ -8,7 +8,7 @@ There are some pertinent discussions [here](https://www.reddit.com/r/programming
 
 | Linux | Windows |
 |:-----:|:-------:|
-|[![Build Status](https://travis-ci.org/Robin329/Snake.svg?branch=dev_refactor)](https://travis-ci.org/Robin329/Snake)|[![Build status](https://ci.appveyor.com/api/projects/status/d4agff8ef7d9tfxh/branch/master?svg=true)](https://ci.appveyor.com/project/Robin329/snake/branch/master)|
+|[![Build Status](https://github.com/Robin329/snake_cpp/actions/workflows/cmake.yml/badge.svg)](https://github.com/Robin329/snake_cpp/actions/workflows/cmake.yml)|[![Build status](https://ci.appveyor.com/api/projects/status/d4agff8ef7d9tfxh/branch/master?svg=true)](https://ci.appveyor.com/project/Robin329/snake/branch/master)|
 
 ## Demo
 
