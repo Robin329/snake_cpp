@@ -6,6 +6,9 @@
 #include <thread>
 #include <mutex>
 
+#define ROW_PIXEL 20
+#define COL_PIXEL 20
+
 class GameCtrl {
 public:
     typedef Map::SizeType SizeType;
@@ -72,8 +75,8 @@ private:
     long moveInterval = 30;
     bool recordMovements = true;
     bool runTest = false;
-    SizeType mapRowCnt = 10;
-    SizeType mapColCnt = 10;
+    SizeType mapRowCnt = ROW_PIXEL;
+    SizeType mapColCnt = COL_PIXEL;
 
     Map *map = nullptr;
     Snake snake;
